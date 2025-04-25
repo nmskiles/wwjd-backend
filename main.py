@@ -17,7 +17,8 @@ async def ask_jesus(request: QuestionRequest):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="model="gpt-3.5-turbo",
+",
             messages=[
                 {"role": "system", "content": "You are Jesus responding in a humorous but biblically-rooted tone."},
                 {"role": "user", "content": prompt}
